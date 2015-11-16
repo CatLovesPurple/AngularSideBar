@@ -14,7 +14,13 @@
     <button ng-click="showLeft($event)">Show left Menu!</button>
     <button ng-click="showRight($event)">Show Right Menu!</button>
 
-    <menu visible="visible" alignment="left">
+    <menu visible="leftVisible" alignment="left">
+        <menu-item hash="first-page">First Page</menu-item>
+        <menu-item hash="second-page">Second Page</menu-item>
+        <menu-item hash="third-page">Third Page</menu-item>
+    </menu>
+
+    <menu visible="rightVisible" alignment="right">
         <menu-item hash="first-page">First Page</menu-item>
         <menu-item hash="second-page">Second Page</menu-item>
         <menu-item hash="third-page">Third Page</menu-item>
