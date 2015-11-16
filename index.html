@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="sideBarApp">
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.angularjs.org/1.4.7/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="directive.js"></script>
+    <script src="controller.js"></script>
+</head>
+
+<body ng-controller="sidebar">
+
+    <button ng-click="showLeft($event)">Show left Menu!</button>
+    <button ng-click="showRight($event)">Show Right Menu!</button>
+
+    <menu visible="visible" alignment="left">
+        <menu-item hash="first-page">First Page</menu-item>
+        <menu-item hash="second-page">Second Page</menu-item>
+        <menu-item hash="third-page">Third Page</menu-item>
+    </menu>
+
+
+</body>
+
+</html>
